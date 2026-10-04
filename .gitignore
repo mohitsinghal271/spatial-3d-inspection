@@ -1,0 +1,6 @@
+data/
+*.zip
+*.npz
+__pycache__/
+*.pyc
+.DS_Store
