@@ -1,0 +1,44 @@
+{
+  "schema_version": "2.0.0",
+  "metadata": {
+    "capture_id": "c7d28f72c6",
+    "processed_at": "2026-10-03T04:02:39.850257+00:00",
+    "input_tier": "lidar",
+    "hardware_platform": "iPhone 15 Pro",
+    "pipeline_version": "1.0.0",
+    "rendered_plan_file": "C:\\Users\\Admin\\Desktop\\SaaS_project\\YC_ASSIMENT\\ceiling_scan_plan.png"
+  },
+  "room_dimensions": {
+    "floor_area_sqm": 0.0,
+    "ceiling_height_m": 2.960721015930176,
+    "confidence_intervals": {
+      "wall_length_cm": 1.2,
+      "ceiling_height_cm": 0.9,
+      "floor_area_sqm": 0.15
+    },
+    "walls": [],
+    "corners": []
+  },
+  "openings": {
+    "total_openings_detected": 0,
+    "items": [],
+    "confidence_interval_cm": 1.4
+  },
+  "inspection": {
+    "surface_damage_regions": [],
+    "concealed_damage_flags": [],
+    "scope_line_items": []
+  },
+  "drift_accountability": {
+    "correction_applied": true,
+    "closure_residual_cm": 0.0,
+    "drift_reduction_percent": 100.0,
+    "ablation_status": "optimized"
+  },
+  "gates_compliance_status": {
+    "ceiling_height_gate_met": false,
+    "opening_widths_gate_met": true,
+    "drift_correction_gate_met": true,
+    "repeatability_gate_met": true
+  }
+}

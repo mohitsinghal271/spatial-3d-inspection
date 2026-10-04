@@ -1,0 +1,213 @@
+{
+  "schema_version": "2.0.0",
+  "metadata": {
+    "capture_id": "c00a170fe1",
+    "processed_at": "2026-10-03T04:01:13.126896+00:00",
+    "input_tier": "lidar",
+    "hardware_platform": "iPhone 15 Pro",
+    "pipeline_version": "1.0.0",
+    "rendered_plan_file": "C:\\Users\\Admin\\Desktop\\SaaS_project\\YC_ASSIMENT\\single_room_plan.png"
+  },
+  "room_dimensions": {
+    "floor_area_sqm": 37.55,
+    "ceiling_height_m": 2.4,
+    "confidence_intervals": {
+      "wall_length_cm": 1.1,
+      "ceiling_height_cm": 0.9,
+      "floor_area_sqm": 0.56
+    },
+    "walls": [
+      {
+        "wall_id": "wall_1",
+        "label": "North Wall",
+        "start_point": [
+          -4.465,
+          0.058
+        ],
+        "end_point": [
+          2.548,
+          0.057
+        ],
+        "length_m": 7.013,
+        "length_cm": 701.3,
+        "height_m": 2.4,
+        "confidence_interval_cm": 1.1
+      },
+      {
+        "wall_id": "wall_2",
+        "label": "East Wall",
+        "start_point": [
+          2.548,
+          0.057
+        ],
+        "end_point": [
+          2.549,
+          5.411
+        ],
+        "length_m": 5.354,
+        "length_cm": 535.4,
+        "height_m": 2.4,
+        "confidence_interval_cm": 1.1
+      },
+      {
+        "wall_id": "wall_3",
+        "label": "South Wall",
+        "start_point": [
+          2.549,
+          5.411
+        ],
+        "end_point": [
+          -4.465,
+          5.412
+        ],
+        "length_m": 7.013,
+        "length_cm": 701.3,
+        "height_m": 2.4,
+        "confidence_interval_cm": 1.1
+      },
+      {
+        "wall_id": "wall_4",
+        "label": "West Wall",
+        "start_point": [
+          -4.465,
+          5.412
+        ],
+        "end_point": [
+          -4.465,
+          0.058
+        ],
+        "length_m": 5.354,
+        "length_cm": 535.4,
+        "height_m": 2.4,
+        "confidence_interval_cm": 1.1
+      }
+    ],
+    "corners": [
+      [
+        -4.465,
+        0.058
+      ],
+      [
+        2.548,
+        0.057
+      ],
+      [
+        2.549,
+        5.411
+      ],
+      [
+        -4.465,
+        5.412
+      ]
+    ]
+  },
+  "openings": {
+    "total_openings_detected": 1,
+    "items": [
+      {
+        "opening_id": "opening_wall_4_1",
+        "type": "window",
+        "wall_id": "wall_4",
+        "width_m": 0.998,
+        "width_cm": 99.8,
+        "confidence_interval_cm": 1.4,
+        "position_3d": [
+          -1.218854480486777,
+          -0.15214021205902095,
+          1.510497714808504
+        ],
+        "position_2d": [
+          -1.218854480486777,
+          1.510497714808504
+        ]
+      }
+    ],
+    "confidence_interval_cm": 1.4
+  },
+  "inspection": {
+    "surface_damage_regions": [
+      {
+        "region_id": "DMG_001",
+        "surface_id": "wall_1",
+        "class": "drywall_crack",
+        "metric_extent": {
+          "linear_m": 1.35,
+          "confidence_interval_m": 0.05,
+          "unit": "linear_m",
+          "value": 1.35
+        },
+        "position_3d": [
+          1.3224658966064453,
+          -0.25214021205902104,
+          2.952847957611084
+        ],
+        "severity": "MODERATE"
+      },
+      {
+        "region_id": "DMG_002",
+        "surface_id": "wall_4",
+        "class": "water_damage",
+        "metric_extent": {
+          "sqm": 0.82,
+          "confidence_interval_sqm": 0.04,
+          "unit": "sqm",
+          "value": 0.82
+        },
+        "position_3d": [
+          0.364874929189682,
+          0.6978598833084106,
+          2.2096729278564453
+        ],
+        "severity": "HIGH"
+      }
+    ],
+    "concealed_damage_flags": [
+      {
+        "flag_id": "FLAG_CONCEALED_1",
+        "rule_fired": "RULE_CRK_02_STRUCTURAL_SHEAR",
+        "surface_id": "wall_1",
+        "description": "Continuous crack exceeding 1.0m indicates concealed framing shift or differential foundation settlement.",
+        "severity": "MEDIUM",
+        "required_action": "Check stud squareness and install carbon fiber structural reinforcement stitch if active."
+      },
+      {
+        "flag_id": "FLAG_CONCEALED_2",
+        "rule_fired": "RULE_WTR_01_CEILING_JUNCTION",
+        "surface_id": "wall_4",
+        "description": "High water damage proximity to ceiling junction indicates concealed roof/plumbing cavity leak.",
+        "severity": "HIGH",
+        "required_action": "Intrusive moisture inspection in ceiling plenum."
+      }
+    ],
+    "scope_line_items": [
+      {
+        "item_id": "SCOPE_1",
+        "surface_id": "wall_1",
+        "action": "V-groove crack prep, elastomeric bridging tape, 3-coat skim and feather",
+        "unit": "linear_m",
+        "quantity": 1.35,
+        "estimated_cost_usd": 180.0
+      },
+      {
+        "item_id": "SCOPE_2",
+        "surface_id": "wall_4",
+        "action": "Open 30cm inspection port, verify joist moisture content, replace damp batt insulation",
+        "unit": "linear_m",
+        "quantity": 1.2,
+        "estimated_cost_usd": 320.0
+      }
+    ]
+  },
+  "drift_accountability": {
+    "correction_applied": true,
+    "closure_residual_cm": 0.0,
+    "drift_reduction_percent": 100.0,
+    "ablation_status": "optimized"
+  },
+  "gates_compliance_status": {
+    "ceiling_height_gate_met": true,
+    "opening_widths_gate_met": true,
+    "drift_correction_gate_met": true,
+    "repeatability_gate_met": true
+  }
+}
